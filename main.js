@@ -37,12 +37,19 @@ function draw(){
     circle(mix, miy, 10)
     fill("red")
     circle(mdx, mdy, 10)
+    if (miy < 160) {
+        cancion.rate(2)
+    } else if(miy<320){
+        cancion.rate(1)
+    } else if(miy<480){
+        cancion.rate(0.5)
+    }
 }
 
 
 function play(){
     cancion.play()
-    cancion.rate(3)
+    cancion.rate(1)
     document.getElementById("Pause").style.display = "inline-block"
     document.getElementById("Play").style.display = "none"
 }
