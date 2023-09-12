@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+
+#Pause{
+    display: none;
+}
+
+#canvas{
+    margin-top: 95px;
+}
